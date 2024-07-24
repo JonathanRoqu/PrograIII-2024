@@ -1,0 +1,112 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOaEvdoiCdyk4Q0xB+A3EGq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JonathanRoqu/PrograIII-2024/blob/main/Conversores.pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fahrenheit_to_celsius(fahrenheit):\n",
+        " \"\"\"Convierte grados Fahrenheit a Celsius.\"\"\"\n",
+        " celsius = (fahrenheit - 32) * 5.0/9.0\n",
+        " return celsius\n",
+        "\n",
+        "try:\n",
+        "  fahrenheit = float(input(\"Ingrese grados Fahrenheit: \"))\n",
+        "  celsius = fahrenheit_to_celsius(fahrenheit)\n",
+        "  print(f\"{fahrenheit} grados Fahrenheit son {celsius:.2f} grados Celsius.\")\n",
+        "except ValueError:\n",
+        "  print(\"Por favor, ingrese un valor numérico válido.\")"
+      ],
+      "metadata": {
+        "id": "0OgfHmBMhudu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ec9a5160-2756-410c-9ad7-106cafba9035"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese grados Fahrenheit: 89\n",
+            "89.0 grados Fahrenheit son 31.67 grados Celsius.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fahrenheit_to_kelvin(fahrenheit):\n",
+        "  \"\"\"Convierte grados Fahrenheit a Kelvin.\"\"\"\n",
+        "  kelvin =(fahrenheit  - 32) *5.0 +273.15\n",
+        "  return kelvin\n",
+        "\n",
+        "try:\n",
+        "    fahrenheit =float (input(\"Ingrese grados Fahrenheit:\"))\n",
+        "    kelvin =fahrenheit_to_kelvin(fahrenheit)\n",
+        "    print(f\"{fahrenheit} grados Fahrenheit son {kelvin:2f} grados Kelvin.\")\n",
+        "except ValueError:\n",
+        "      print(\"Por favor, ingrese un valor numèrico vàlido.\")\n",
+        "\n",
+        "def celsius_to_kelvin(Celsius):\n",
+        "  \"\"\"Convierte grados Celsius a kelvin.\"\"\"\n",
+        "  kelvin = celsius + 273.15\n",
+        "  return kelvin\n",
+        "\n",
+        "try:\n",
+        "    celsius = float(input(\"Ingrese grados celsius\"))\n",
+        "    kelvin = celsius_to_kelvin(celsius)\n",
+        "    print(f\"{celsius} grados celsius son {kelvin:.2f} grados kelvin.\")\n",
+        "except ValueError:\n",
+        "    print(\"por favor, ingrese un valor numèrico vàlido.\")"
+      ],
+      "metadata": {
+        "id": "VIQUNmZFuWiu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a053b563-40e6-46f5-bda8-ff2948bb2b9c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese grados Fahrenheit:34\n",
+            "34.0 grados Fahrenheit son 283.150000 grados Kelvin.\n",
+            "Ingrese grados celsius30\n",
+            "30.0 grados celsius son 303.15 grados kelvin.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
